@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <link href='https://fonts.googleapis.com/css?family=Aclonica' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Merienda' rel='stylesheet'>
+  <title>Main page</title>
+</head>
+<style>
+  *{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    color: #FFFFFF;
+  }
+  body{
+    font-family: 'Merienda';
+    background-image: url('/static/neon.jpg');
+    background-position: center;
+    background-size: cover;
+    background-attachment:scroll;
+  }
+  nav{
+    height: 80px;
+    width: 100%;
+
+  }
+  nav ul{
+    float:right;
+    margin-right: 40px;
+  }
+  label.logo{
+    padding: 50px;
+    margin-top: 20px;
+    font-size: 50px;
+    font-weight: bold;
+    color: white;
+    line-height: 80px;
+  }
+  nav li{
+    display: inline-block;
+    margin: 0 8px;
+    line-height: 80px;
+  }
+  nav a{
+    color: white;
+    font-size: 18px;
+    text-transform: uppercase;
+    border: 1px solid transparent;
+    padding: 7px 10px;
+    border-radius: 3px;
+  }
+
+  a.active,a:hover
+  {
+    border:1px solid white;
+    transition: .5s;
+  }
+  nav #icon{
+    color: white;
+    font-size: 30px;
+    line-height: 80px;
+    float: right;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+  }
+  .sub-header
+  {
+    height: 100vh;
+    width: 100%;
+
+    text-align: center;
+    color: #fff;
+    text-shadow: 2px 2px 5px #f2f2f2;
+    font-size: 36px;
+  }
+  .sub-header h1
+  {
+    padding-top: 250px;
+    font-family: 'Aclonica';
+  }
+  .sub-header button
+  {
+    width: 160px;
+    height: 50px;
+    background-color: rgb(0,0,0.5);
+    color: #f2f2f2;
+    font-family: 'Aclonica';
+    border-radius: 10px;
+    cursor: pointer;
+    border: 2px solid rgb(245, 245, 250);
+    transition: 0.25px;
+    outline: none;
+  }
+  .sub-header button:hover
+  {
+    background-color: #f2f2f2;
+    color: black;
+    border-color: #f2f2f2;
+    border: 2px solid rgb(218, 218, 215);
+    transition: 0.25px;
+    outline: none;
+  }
+
+</style>
+<body>
+<nav>
+<label class="logo" style="padding-top: 40px;">Welcome!!!</label>
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li><a class="active" href="/sentiment_analyzer">Get Started</a></li>
+      <li><a href="/help">Help</a></li>
+
+    </ul>
+    <label id="icon">
+      <i class="fas fa bars"></i>
+    </label>
+  </nav>
+  <div class="sub-header">
+    <h1>Lets Get Started</h1>
+    <button onclick="document.location='/sentiment_analyzer'">Click here to start</button>
+  </div>
+ <h2>Sentiment Analysis</h2>
+       <p>Sentiment analysis is the process of using natural language processing, text analysis, and statistics to analyze customer sentiment. The best businesses understand the sentiment of their customers—what people are saying, how they’re saying it, and what they mean. Customer sentiment can be found in tweets, comments, reviews, or other places where people mention your brand. Sentiment Analysis is the domain of understanding these emotions with software, and it’s a must-understand for developers and business leaders in a modern workplace.</p>
+         <h2>Features</h2>
+        <ul>
+            <li>This is a web app made using Python and Flask Framework.</li>
+             <li> It has a dashboard.</li>
+             <li> Users can enter keywords to retrieve live Twitter text based on the keyword, and analyze it for customer feelings and sentiments.</li>
+             <li> This data can be visualized in a graph.</li>
+             <li>This project, in particular, mines data using a popular “Tweepy” API.</li>
+             <li>Tweepy API connects to Twitter in real-time and gathers metadata along with the text from the Twitter platform.</li> </ul><br><br>
+
+</body>
+</html>
+
+
